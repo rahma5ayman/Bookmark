@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://kit.fontawesome.com/8adc8a7dd7.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap" rel="stylesheet">
+
+  <title>BookMark</title>
+  <link rel="icon" href="images.png">
+
+</head>
+<body >
+
+  <div class="container mt-5">
+    <h1>Bookmarker</h1>
+    <h2>
+      <i class="fa-solid fa-bookmark"></i>
+      Bookmark your favorite sites
+      <i class="fa-solid fa-bookmark"></i>
+    </h2>
+    <form id="bookmarkForm">
+        <div class="form-group">
+            <label for="siteName" class="pt-3 d-flex" >
+              <i class="fa-solid fa-book-bookmark pe-2  fs-4"></i>
+              <h3 class="px-1">Site Name</h3>
+            </label>
+            <input type="text" id="siteName" class="form-control" placeholder="Bookmark Name" required>
+        </div>
+        <div class="form-group">
+            <label for="siteUrl" class="pt-2 d-flex" >
+              <i class="fa-solid fa-link pe-2 fs-4"></i>
+              <h3 class="px-1">Site URL</h3>
+            </label>
+            <input type="url" id="siteUrl" class="form-control" placeholder="Website URL" required>
+        </div>
+        <button class="pt-3" type="submit">Submit</button>
+    </form>
+    <div id="bookmarksResults" class="pt-3" >
+        <table>
+            <thead>
+                <tr>
+                    <th><h5>Index</h5></th>
+                    <th><h5>Website Name</h5></th>
+                    <th><h5>Visit</h5></th>
+                    <th><h5>Delete</h5></th>
+                </tr>
+            </thead>
+            <tbody id="bookmarksTable">
+                <!-- Bookmarks will be added here -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="js/index.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
